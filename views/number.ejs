@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href="assets/style.css" type="text/css" rel="stylEsheet"/>
+    </head>
+    <body>
+            <%if(ID % 2 == 0){%>
+                    <h1>Numeros pares</h1>
+                    <ul>                    
+                        <%for(let i = 0; i < (ID * 2); i++){%>
+                            <li> <%= ID %> Es par</li>
+                        <%}%>
+                    </ul>
+                        <%}else{%>
+                    <h1>Numeros impares</h1>
+                    <ul>
+                        <%for(let i = 0; i < ID; i++){%>
+                            <li> <%= ID %> Es impar</li>
+                        <%}%>
+                    </ul>
+                        <%}%>
+    </body>
+</html>
